@@ -32,4 +32,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Created by [Kévin Dunglas](https://dunglas.fr). Graphic design by [Laury Sorriaux](https://github.com/ginifizz).
 Sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
-# test-mercure-platfrom-sh
