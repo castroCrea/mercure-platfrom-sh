@@ -32,3 +32,4 @@ web:
 mounts:
   'mercure':
     source: local
+    source_path: mercure
