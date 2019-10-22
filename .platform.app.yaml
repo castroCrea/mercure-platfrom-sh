@@ -30,6 +30,6 @@ web:
       passthru: '/index.html'
 
 mounts:
-  './mercure':
+  './':
     source: local
-    source_path: ./mercure
+    source_path: ./
