@@ -28,3 +28,8 @@ web:
       root: 'public'
       # The front-controller script to send non-static requests to.
       passthru: '/index.html'
+
+mounts:
+  '/mercure':
+    source: local
+    source_path: private
