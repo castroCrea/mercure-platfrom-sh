@@ -10,9 +10,9 @@ type: 'golang:1.13'
 hooks:
   # Deploy hooks can access services but the file system is now read-only.
   build: |
-    wget "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_x86_64.tar.gz"
+    wget "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_i386.tar.gz"
     ls
-    tar xvzf mercure_0.7.2_Linux_x86_64.tar.gz
+    tar xvzf mercure_0.7.2_Linux_i386.tar.gz
     ls
     rm mercure_0.7.2_Linux_x86_64.tar.gz
     chmod a+x mercure
@@ -25,11 +25,8 @@ web:
 
   locations:
    /:
-     # Route all requests to the Go app, unconditionally.
-     # If you want some files served directly by the web server without hitting Go, see
-     # https://docs.platform.sh/configuration/app/web.html
-     allow: false
-     passthru: true
+     root: 'public'
+     passthru: 'index.html'
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
