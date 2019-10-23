@@ -32,7 +32,6 @@ web:
       # If you want some files served directly by the web server without hitting Go, see
       # https://docs.platform.sh/configuration/app/web.html
       allow: false
-      passthru: true
       root: 'public'
       passthru: '/index.html'
 
