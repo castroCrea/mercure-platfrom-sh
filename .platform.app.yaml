@@ -10,9 +10,9 @@ type: 'golang:1.13'
 hooks:
   # Deploy hooks can access services but the file system is now read-only.
   build: |
-    wget  -O /mercurePackages.tar.gz "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_x86_64.tar.gz"
+    wget "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_x86_64.tar.gz"
     ls
-    tar xvzf mercurePackages.tar.gz -C /
+    tar xvzf mercure_0.7.2_Linux_x86_64.tar.gz
     ls
   post_deploy: |
     ls
