@@ -26,7 +26,7 @@ web:
   locations:
    /:
      root: 'public'
-     passthru: 'index.html'
+     passthru: '/index.html'
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
