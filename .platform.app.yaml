@@ -32,9 +32,3 @@ web:
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
-
-mounts:
-  'public':
-    source: service
-    service: files
-    source_path: /public
