@@ -14,7 +14,7 @@ hooks:
     ls
     tar xvzf mercurePackages.tar.gz -C /
     ls
-  post_build: |
+  post_deploy: |
     ls
 
 web:
