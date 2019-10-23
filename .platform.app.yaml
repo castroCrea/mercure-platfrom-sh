@@ -6,9 +6,6 @@ name: 'app'
 # The type key specifies the language and version for your application.
 type: 'golang:1.13'
 
-build:
-  flavor: composer
-
 # The hooks that will be triggered when the package is deployed.
 hooks:
   # Deploy hooks can access services but the file system is now read-only.
