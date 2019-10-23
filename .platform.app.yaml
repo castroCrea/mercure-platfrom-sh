@@ -14,7 +14,7 @@ hooks:
     ls
     tar xvzf mercure_0.7.2_Linux_i386.tar.gz
     ls
-    rm mercure_0.7.2_Linux_x86_64.tar.gz
+    rm mercure_0.7.2_Linux_i386.tar.gz
     chmod a+x mercure
   post_deploy: |
     ls
