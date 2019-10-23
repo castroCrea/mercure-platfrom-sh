@@ -12,3 +12,16 @@
 
 ### Push to platform 
 ```git push -u platform master ```
+
+### Get the url where
+```platform url```
+
+## config on PS
+Add 2 env variables
+
+* env:MERCURE_SECRET
+* env:MERCURE_PUBLISH_ALLOWED_ORIGINS
+
+## Warning ⚠️
+Remove DEMO=1 Parameters from `web.commands.start`
+All explanation (here)[https://github.com/dunglas/mercure/blob/master/docs/hub/config.md]
