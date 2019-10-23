@@ -33,10 +33,10 @@ web:
       # https://docs.platform.sh/configuration/app/web.html
       allow: false
       passthru: true
-
-    '/playground':
-      root: 'public'
-      passthru: '/index.html'
+#
+#    '/playground':
+#      root: 'public'
+#      passthru: '/index.html'
 
 mounts:
   'database':
