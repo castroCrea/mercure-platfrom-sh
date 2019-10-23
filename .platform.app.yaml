@@ -37,4 +37,4 @@ mounts:
   'public':
     source: service
     service: files
-    source_path: public
+    source_path: /public
