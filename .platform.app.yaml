@@ -11,25 +11,18 @@ hooks:
   # Deploy hooks can access services but the file system is now read-only.
   build: |
     ls
-#  deploy: |
-#    mv mercure exec
-#    chmod a+x exec/mercure
-  post_deploy: |
-    JWT_KEY='!ChangeMe!' ADDR=':3000' DEMO=1 ALLOW_ANONYMOUS=1 CORS_ALLOWED_ORIGINS=* PUBLISH_ALLOWED_ORIGINS='http://localhost:3000' ./mercure
-
-
-# The size of the persistent disk of the application (in MB).
-disk: 2048
 
 web:
-  locations:
-    '/':
-      # The public directory of the app, relative to its root.
-      root: 'public'
-      # The front-controller script to send non-static requests to.
-      passthru: '/index.html'
+  commands:
+    start: 'JWT_KEY='!ChangeMe!' ADDR=':3000' DEMO=1 ALLOW_ANONYMOUS=1 CORS_ALLOWED_ORIGINS=* PUBLISH_ALLOWED_ORIGINS='http://localhost:3000' ./mercure'
 
-mounts:
-  'exec':
-    source: local
-    source_path: exec
+  locations:
+   /:
+     # Route all requests to the Go app, unconditionally.
+     # If you want some files served directly by the web server without hitting Go, see
+     # https://docs.platform.sh/configuration/app/web.html
+     allow: false
+     passthru: true
+
+# The size of the persistent disk of the application (in MB).
+disk: 1024
