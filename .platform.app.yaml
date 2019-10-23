@@ -33,7 +33,7 @@ web:
 mounts:
   'database':
     source: local
-    source_path: /database
+    source_path: database
 
 # The size of the persistent disk of the application (in MB).
 disk: 1024
