@@ -16,7 +16,6 @@ hooks:
     ls
     rm mercure_0.7.2_Linux_i386.tar.gz
     chmod 777 mercure
-    chmod 777 -r mercure
   post_deploy: |
     ls
 
