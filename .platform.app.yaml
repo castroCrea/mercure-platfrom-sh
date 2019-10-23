@@ -11,11 +11,11 @@ size: S
 hooks:
   # Deploy hooks can access services but the file system is now read-only.
   build: |
-    wget "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_i386.tar.gz"
+    wget "https://github.com/dunglas/mercure/releases/download/v0.7.2/mercure_0.7.2_Linux_x86_64.tar.gz"
     ls
-    tar xvzf mercure_0.7.2_Linux_i386.tar.gz
+    tar xvzf mercure_0.7.2_Linux_x86_64.tar.gz
     ls
-    rm mercure_0.7.2_Linux_i386.tar.gz
+    rm mercure_0.7.2_Linux_x86_64.tar.gz
     chmod 777 mercure
   post_deploy: |
     ls
